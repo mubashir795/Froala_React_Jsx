@@ -1,14 +1,30 @@
-import styled, { createGlobalStyle } from 'styled-components';
-
-const GlobalStyle = createGlobalStyle`
-  * {
-  box-sizing: border-box;
+* {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+}
+body {
   font-family: 'Nunito', sans-serif;
- } 
- 
+}
 
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  body {
+    width: fit-content;
+    margin: auto;
+  }
+}
+ 
+/* Portrait and Landscape */
+@media only screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 1024px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+  body {
+    width: fit-content;
+    margin: auto;
+  }
+}
 /* Home-page */
 
 h1.main-heading {
@@ -30,10 +46,16 @@ p.main-des {
 }
 a.btn-explore {
   margin-right: 10px;
+  text-decoration: none;
 }
+
+a.btn-download {
+  text-decoration: none;
+}
+
 a.btn-inline-ex {
   font-size: 20px;
-  padding: 20px 30px;
+  padding: 15px 35px;
   color: #252525;
   border-color: #ffffff;
   background: #ffffff;
@@ -41,7 +63,7 @@ a.btn-inline-ex {
 }
 a.btn-inline-down {
   font-size: 20px;
-  padding: 20px 30px;
+  padding: 15px 35px;
   color: #ffffff;
   border-color: #0098f7;
   background: #0098f7;
@@ -70,6 +92,7 @@ p.text-froala {
 }
 .froala-section {
   display: flex;
+  justify-content: center;
 }
 .img-1 {
   width: 33.33333333%;
@@ -153,47 +176,21 @@ a.plan-btn {
   border-radius: 2px 2px 2px 2px;
   padding: 12px 24px 12px 24px;
 }
+p.edit-link a {
+  color: #0198f7;
+  text-decoration: none;
+}
+p.edit-link {
+  margin-top: 10px;
+}
+.intline-btn-link a {
+  text-decoration: none;
+}
+.plan-btn-style a {
+  text-decoration: none;
+}
+p.text-small a {
+  color: #0198f7;
+  text-decoration: none;
+}
 
-
-`;
-
-export const Container = styled.div`
-  z-index: 1;
-  width: 100%;
-  max-width: 1300px;
-  margin-right: auto;
-  margin-left: auto;
-  padding-right: 50px;
-  padding-left: 50px;
-
-  @media screen and (max-width: 991px) {
-    padding-right: 30px;
-    padding-left: 30px;
-  }
-`;
-
-
-export const Button = styled.button`
-  border-radius: 4px;
-  background: ${({ primary }) => (primary ? '#0198f7' : '#0198f7')};
-  white-space: nowrap;
-  padding: ${({ big }) => (big ? '12px 64px' : '10px 20px')};
-  color: #000;
-  font-size: ${({ fontBig }) => (fontBig ? '20px' : '16px')};
-  outline: none;
-  border: none;
-  cursor: pointer;
-
-  &:hover {
-    transition: all 0.3s ease-out;
-    background: #fff;
-    background-color: ${({ primary }) => (primary ? '#0198f7' : '#0198f7')};
-  }
-
-  @media screen and (max-width: 960px) {
-    width: 100%;
-  }
-
-`;
-
-export default GlobalStyle;

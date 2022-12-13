@@ -54,9 +54,11 @@ function Home() {
                   <div>
                       <p className='inline-title'>Classic and Inline</p>
                       <p className='inline-des'>There's no need to reinvent the wheel. Our rich text editor comes with over 30 out of the box plugins to choose from and use in your project.</p>
-                      <Link to='/'>
-                          <a className='inline-btn'>Inline Demo</a>
-                      </Link>
+                      <div className='intline-btn-link'>
+                        <Link to='/'>
+                            <a className='inline-btn'>Inline Demo</a>
+                        </Link>
+                      </div>
                   </div>
               </div>
           </section>
@@ -67,13 +69,13 @@ function Home() {
                       <img src={require('./components/images/rails.png')} width="86" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
-                      <img src={require('./components/images/react.png')} width="86" height="30"/>
+                      <img src={require('./components/images/react.png')} width="50" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
                       <img src={require('./components/images/aurelia.png')} width="86" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
-                      <img src={require('./components/images/angular.png')} width="86" height="30"/>
+                      <img src={require('./components/images/angular.png')} width="50" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
                       <img src={require('./components/images/ionic.png')} width="86" height="30"/>
@@ -82,7 +84,7 @@ function Home() {
                       <img src={require('./components/images/vue.png')} width="86" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
-                      <img src={require('./components/images/yii.png')} width="86" height="30"/>
+                      <img src={require('./components/images/yii.png')} width="100" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
                       <img src={require('./components/images/meteor.png')} width="86" height="30"/>
@@ -108,7 +110,7 @@ function Home() {
                       <img src={require('./components/images/ionic.png')} width="78" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
-                      <img src={require('./components/images/wordpress.png')} width="78" height="30"/>
+                      <img src={require('./components/images/wordpress.png')} width="100" height="30"/>
                   </div>
                   <div className='space-img rails-img'>
                       <img src={require('./components/images/sencha.jpeg')} width="78" height="30"/>
@@ -118,7 +120,7 @@ function Home() {
           <section className='container'>
               <p className='get-started'>Get Started Now</p>
               <p className='heading-des'>Unlimited users and developers no matter which plan you choose.</p>
-              <p className='text-small'>For any questions <a className='text-normal' href="/wysiwyg-editor/contact/"><i className='fa fa-envelope'></i></a> contact us or check out our <a  href="https://wysiwyg-editor.froala.help/hc/en-us">Help Center</a>.</p>
+              <p className='text-small'>For any questions contact us or check out our <a  href="https://wysiwyg-editor.froala.help/hc/en-us">Help Center</a>.</p>
               <div className='plan-btn-style'>
                   <Link to='/'>
                       <a className='plan-btn'>See Our Plans</a>

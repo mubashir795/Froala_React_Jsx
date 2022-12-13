@@ -1,19 +1,10 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
+import './Navbar.css';
 import { FaBars, FaTimes } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib';
-import { Button } from '../../globalStyles';
-import {
-  Nav,
-  NavbarContainer,
-  NavLogo,
-  MobileIcon,
-  NavMenu,
-  NavItem,
-  NavItemBtn,
-  NavLinks,
-  NavBtnLink
-} from './Navbar.elements';
 import Logo from './images/froala-1.png';
+
 
 function Navbar() {
   const [click, setClick] = useState(false);
@@ -32,74 +23,75 @@ function Navbar() {
 
   useEffect(() => {
     showButton();
+    window.addEventListener('resize', showButton);
+    
   }, []);
 
-  window.addEventListener('resize', showButton);
 
   return (
     <>
       <IconContext.Provider value={{ color: '#000' }}>
-        <Nav>
-          <NavbarContainer>
-            <NavLogo to='/'>
+        <nav className='navbar'>
+          <div className='navbar-container container'>
+            <Link to='/' className='navbar-logo' onClick={closeMobileMenu}>
               <img src={Logo} width="200" alt="logo"/>
-            </NavLogo>
-            <MobileIcon>
+            </Link>
+            <div className='menu-icon' onClick={handleClick}>
               {click ? <FaTimes /> : <FaBars />}
-            </MobileIcon>
-            <NavMenu onClick={handleClick} click={click}>
-              <NavItem>
-                <NavLinks to='/' onClick={closeMobileMenu}>
+            </div>
+            <ul className={click ? 'nav-menu active' : 'nav-menu'}>
+              <li className='nav-item'>
+                <Link to='/' className='nav-links' onClick={closeMobileMenu}>
                   Overview
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to='/' onClick={closeMobileMenu}>
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link
+                  to='/'
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
                   Features
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to='/' onClick={closeMobileMenu}>
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link
+                  to='/'
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
                   Docs
-                </NavLinks>
-              </NavItem>
-              <NavItem>
-                <NavLinks to='/' onClick={closeMobileMenu}>
+                </Link>
+              </li>
+              <li className='nav-item'>
+                <Link
+                  to='/'
+                  className='nav-links'
+                  onClick={closeMobileMenu}
+                >
                   Examples
-                </NavLinks>
-              </NavItem>
-              <NavItemBtn>
+                </Link>
+              </li>
+              <li className='nav-btn'>
                 {button ? (
-                  <NavBtnLink to='/'>
-                    <Button primary>Pricing</Button>
-                  </NavBtnLink>
+                  <Link to='/sign-up' className='btn-link pricing-btn'>Pricing</Link>
                 ) : (
-                  <NavBtnLink to='/'>
-                    <Button onClick={closeMobileMenu} fontBig primary>
-                      Pricing
-                    </Button>
-                  </NavBtnLink>
+                  <Link to='/sign-up' className='btn-link pricing-btn'>Pricing</Link>
                 )}
-              </NavItemBtn>
-              <NavItemBtn>
+              </li>
+              <li className='nav-btn'>
                 {button ? (
-                  <NavBtnLink to='/'>
-                    <Button primary>Get Started</Button>
-                  </NavBtnLink>
+                  <Link to='/sign-up' className='btn-link started-btn'>Get Started</Link>
                 ) : (
-                  <NavBtnLink to='/'>
-                    <Button onClick={closeMobileMenu} fontBig primary>
-                      Get Started
-                    </Button>
-                  </NavBtnLink>
+                  <Link to='/sign-up' className='btn-link started-btn'>Get Started</Link>
                 )}
-              </NavItemBtn>
-            </NavMenu>
-          </NavbarContainer>
-        </Nav>
+              </li>
+            </ul>
+          </div>
+        </nav>
       </IconContext.Provider>
     </>
   );
-  }
-  
-  export default Navbar;
+}
+
+export default Navbar;
