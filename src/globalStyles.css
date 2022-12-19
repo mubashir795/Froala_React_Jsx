@@ -194,3 +194,62 @@ p.text-small a {
   text-decoration: none;
 }
 
+/* Demo */
+
+p.use-text {
+  text-align: center;
+}
+span.box-color {
+  background: #bde3fb5c;
+  padding: 10px;
+  border-radius: 4px;
+  font-family: "Lucida Console", Monaco, monospace;
+}
+.img-Spring{
+  width: 25%;
+}
+.spring-images {
+  margin-top: 50px;
+  display: flex;
+  text-align: center;
+}
+
+.comapnies-img{
+  width: 11.11111111%;
+}
+.text-read-more{
+  text-align: center;
+  margin-top: 50px;
+}
+.froala-tint{
+  margin-top: 50px;
+  display: flex;
+}
+p.text-tint {
+  width: 50%;
+  margin-right: 20px;
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+.editior_img {
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+p.tint-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: #353535;
+  padding-top: 15px;
+  margin-bottom: 20px;
+}
+p.modern-text {
+  text-align: center;
+  font-size: 33px;
+  color: #353535;
+  margin-bottom: 50px;
+  margin-top: 100px;
+}
+.bottom-space {
+  margin-bottom: 100px;
+}
