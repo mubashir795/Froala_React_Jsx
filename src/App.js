@@ -6,6 +6,7 @@ import Home from './components/Pages/Home';
 import Navbar from './components/Navbar/Navbar';
 import Download from './components/Pages/Download';
 import Features from "./components/Pages/Features";
+import Docs from "./components/Pages/Docs";
 
 
 function App() {
@@ -16,6 +17,7 @@ function App() {
           <Route path="/" exact element={<Home/>} />
           <Route path="/download" exact element={<Download />} />
           <Route path="/features" exact element={<Features />} />
+          <Route path="/docs" exact element={<Docs />} />
         </Routes>
         <Footer/>
       </>
