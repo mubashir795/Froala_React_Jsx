@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-function Demo() {
+function Download() {
     return (
         <>
             <div className='section'>
@@ -238,4 +238,4 @@ function Demo() {
   );
 }
 
-export default Demo;
+export default Download;

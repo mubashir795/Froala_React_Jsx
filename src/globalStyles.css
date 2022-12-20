@@ -253,3 +253,39 @@ p.modern-text {
 .bottom-space {
   margin-bottom: 100px;
 }
+
+/* Features */
+.ultra-section {
+  display: flex;
+  margin-top: 150px;
+}
+.ultra-text {
+  width: 50%;
+}
+.ultra-img {
+  width: 50%;
+  text-align: right;
+}
+p.head-title {
+  font-size: 42px;
+}
+p.color-grey {
+  color: #8892a0;
+  font-size: 24px;
+  margin-top: 25px;
+  line-height: 32px;
+}
+.text-block {
+  width: 25%;
+}
+.ultra-block {
+  display: flex;
+  margin-top: 60px;
+}
+section.bgd-color {
+  background-color: #FAFAFA;
+  padding-bottom: 50px;
+}
+.top-space {
+  margin-top: 100px;
+}

@@ -1,2 +1,2 @@
 export { default as Navbar } from './Navbar/Navbar';
-export { default as Demo } from './Demo';
+export { default as Download } from './Download';
