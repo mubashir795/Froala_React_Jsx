@@ -67,7 +67,7 @@ function Download() {
                             <img src={require('../images/thomson.png')} width="107" height="25"/>
                         </div>
                   </div>
-                    <p className="text-read-more"><a href="/wysiwyg-editor/customers/">Read more about our customers <i className="fa fa-angle-right icon-after"></i></a></p>
+                    <p className="text-read-more"><Link to='/customers'><a className='text-read-more'>Read more about our customers</a></Link></p>
               </div>
             </section>
             <section className='container'>

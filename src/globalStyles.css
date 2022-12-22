@@ -384,3 +384,54 @@ p.text-center {
     padding-bottom: 10px;
   }
 }
+
+/* Customers */
+.box-text {
+  background: #f5f5f5;
+  padding: 30px;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-top: 50px;
+}
+.btn-onbounce {
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+.discover-block {
+  display: flex;
+}
+.discover-card {
+  background: #f5f5f5;
+  max-width: 555px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  line-height: 1.5;
+}
+p.bounce-des {
+  margin-top: 10px;
+  width: 80%;
+}
+h1.thousands-heading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-size: 42px;
+}
+.tweet-card {
+  max-width: 555px;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 15px;
+  line-height: 1.5;
+}
+
+@media only screen and (max-width: 768px) {
+  /* For mobile phones: */
+  .discover-block {
+    display: block;
+  }
+}
