@@ -55,7 +55,7 @@ function Home() {
                       <p className='inline-title'>Classic and Inline</p>
                       <p className='inline-des'>There's no need to reinvent the wheel. Our rich text editor comes with over 30 out of the box plugins to choose from and use in your project.</p>
                       <div className='intline-btn-link'>
-                        <Link to='/'>
+                        <Link to='/inline'>
                             <a className='inline-btn'>Inline Demo</a>
                         </Link>
                       </div>

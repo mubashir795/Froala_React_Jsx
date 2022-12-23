@@ -8,6 +8,8 @@ import Download from './components/Pages/Download';
 import Features from "./components/Pages/Features";
 import Docs from "./components/Pages/Docs";
 import Customers from "./components/Pages/Customers";
+import Inline from "./components/Pages/Inline";
+import Extend from "./components/Pages/Extend";
 
 
 function App() {
@@ -20,6 +22,8 @@ function App() {
           <Route path="/features" exact element={<Features />} />
           <Route path="/docs" exact element={<Docs />} />
           <Route path="/customers" exact element={<Customers />} />
+          <Route path="/inline" exact element={<Inline />} />
+          <Route path="/extend" exact element={<Extend />} />
         </Routes>
         <Footer/>
       </>

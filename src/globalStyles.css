@@ -435,3 +435,52 @@ h1.thousands-heading {
     display: block;
   }
 }
+
+/* Inline */
+.inline-row {
+  margin-top: 200px;
+}
+p.text-inline {
+  font-size: 16px;
+  color: #515151;
+  margin-top: 15px;
+}
+.inline-heading {
+  margin-top: 150px;
+  width: 50%;
+  margin-left: 70px;
+}
+.row-center{
+  display: flex;
+  margin-top: 100px;
+  margin-bottom: 100px;
+  justify-content: center;
+}
+.img-inline-btn {
+  margin-left: 50px;
+}
+/* Extend */
+.custom-box{
+  margin-top: 100px;
+    width: 70%;
+    margin-left: 250px;
+}
+.custom-box-row{
+  display: flex;
+  margin-top: 50px;
+}
+.custom-card {
+  margin-left: 50px;
+}
+h3.custom-title {
+  margin-bottom: 20px;
+}
+ul.text-light {
+  list-style: none;
+}
+p.space-btm {
+  margin-bottom: 100px;
+}
+.space-top {
+  margin-top: 200px;
+}
