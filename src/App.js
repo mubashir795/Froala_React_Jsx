@@ -10,6 +10,7 @@ import Docs from "./components/Pages/Docs";
 import Customers from "./components/Pages/Customers";
 import Inline from "./components/Pages/Inline";
 import Extend from "./components/Pages/Extend";
+import Online from "./components/Pages/Online"
 
 
 function App() {
@@ -24,6 +25,7 @@ function App() {
           <Route path="/customers" exact element={<Customers />} />
           <Route path="/inline" exact element={<Inline />} />
           <Route path="/extend" exact element={<Extend />} />
+          <Route path="/online" exact element={<Online />} />
         </Routes>
         <Footer/>
       </>
