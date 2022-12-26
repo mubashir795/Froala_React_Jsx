@@ -10,7 +10,8 @@ import Docs from "./components/Pages/Docs";
 import Customers from "./components/Pages/Customers";
 import Inline from "./components/Pages/Inline";
 import Extend from "./components/Pages/Extend";
-import Online from "./components/Pages/Online"
+import Online from "./components/Pages/Online";
+import Plugin from "./components/Pages/Plugin";
 
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           <Route path="/inline" exact element={<Inline />} />
           <Route path="/extend" exact element={<Extend />} />
           <Route path="/online" exact element={<Online />} />
+          <Route path="/plugin" exact element={<Plugin />} />
         </Routes>
         <Footer/>
       </>
