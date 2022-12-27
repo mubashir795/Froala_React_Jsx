@@ -643,4 +643,90 @@ li.bullets-style {
 }
 li.space {
   margin-bottom: 50px;
+
+}
+
+/* solution */
+section.back-img{
+  background-image: url("./components/images/HeroBannerBG.png");
+  background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0px 100px 0px;
+}
+h1.back-img-title {
+  color: #FFFFFF;
+  font-family: "Nunito", Sans-serif;
+  font-size: 35px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+}
+p.back-img-des {
+  color: #FFFFFF;
+  font-family: "Nunito", Sans-serif;
+  font-size: 23px;
+  font-weight: 400;
+  line-height: 1.3em;
+  text-align: center;
+  padding-top: 50px;
+}
+.back-center-img {
+  text-align: center;
+  margin-top: 50px;
+}
+.solution-row {
+  display: flex;
+}
+.solution-box{
+  width: 33.33333333%;
+}
+.solution-box {
+  background: #F5F5F5;
+  border-radius: 7px 7px 7px 7px;
+  margin-right: 20px;
+  border-style: solid;
+  border-width: 5px 5px 5px 5px;
+  border-color: #FFFFFF;
+  box-shadow: 0px 0px 4px 0px #cccccc;
+  padding: 30px 12px 30px 12px;
+}
+p.solution-img-des {
+  text-align: right;
+  color: #0098F7;
+  font-size: 13px;
+  font-weight: 800;
+}
+.solution-row.top-row {
+  margin-top: -50px;
+  margin-bottom: 50px;
+}
+.bottom-row {
+  margin-bottom: 50px;
+}
+h2.solution-img-text {
+  color: #0098F7;
+  font-size: 40px;
+  font-weight: bold;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+section.background-clr {
+  background: #0198F7;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+h2.background-img-text {
+  color: #FFFFFF;
+  font-size: 35px;
+  font-weight: 600;
+  margin-top: 100px;
+  text-align: center;
+}
+.solution-text {
+  width: 100%;
+}
+a.btn-clr {
+  background: #fff;
+  color: #0098F7;
 }
