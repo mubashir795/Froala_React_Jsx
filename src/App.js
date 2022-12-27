@@ -12,6 +12,7 @@ import Inline from "./components/Pages/Inline";
 import Extend from "./components/Pages/Extend";
 import Online from "./components/Pages/Online";
 import Plugin from "./components/Pages/Plugin";
+import Uploader from"./components/Pages/Uploader";
 
 
 function App() {
@@ -28,6 +29,7 @@ function App() {
           <Route path="/extend" exact element={<Extend />} />
           <Route path="/online" exact element={<Online />} />
           <Route path="/plugin" exact element={<Plugin />} />
+          <Route path="/uploader" exact element={<Uploader />} />
         </Routes>
         <Footer/>
       </>
