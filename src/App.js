@@ -14,6 +14,7 @@ import Online from "./components/Pages/Online";
 import Plugin from "./components/Pages/Plugin";
 import Uploader from"./components/Pages/Uploader";
 import Solution from"./components/Pages/Solution";
+import Sencha from"./components/Pages/Sencha";
 
 
 function App() {
@@ -32,6 +33,7 @@ function App() {
           <Route path="/plugin" exact element={<Plugin />} />
           <Route path="/uploader" exact element={<Uploader />} />
           <Route path="/solution" exact element={<Solution />} />
+          <Route path="/sencha" exact element={<Sencha />} />
         </Routes>
         <Footer/>
       </>
