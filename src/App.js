@@ -16,6 +16,8 @@ import Uploader from"./components/Pages/Uploader";
 import Solution from"./components/Pages/Solution";
 import Sencha from"./components/Pages/Sencha";
 import Unbounce from"./components/Pages/Unbounce";
+import Artstation from "./components/Pages/Artstation";
+import Closeio from "./components/Pages/Closeio";
 
 
 function App() {
@@ -36,6 +38,8 @@ function App() {
           <Route path="/solution" exact element={<Solution />} />
           <Route path="/sencha" exact element={<Sencha />} />
           <Route path="/unbounce" exact element={<Unbounce />} />
+          <Route path="/artstation" exact element={<Artstation />} />
+          <Route path="/closeio" exact element={<Closeio />} />
         </Routes>
         <Footer/>
       </>
