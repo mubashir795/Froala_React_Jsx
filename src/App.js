@@ -18,6 +18,8 @@ import Sencha from"./components/Pages/Sencha";
 import Unbounce from"./components/Pages/Unbounce";
 import Artstation from "./components/Pages/Artstation";
 import Closeio from "./components/Pages/Closeio";
+import Sdkc from "./components/Pages/Sdkc";
+import Toolbar from "./components/Pages/Toolbar";
 
 
 function App() {
@@ -40,6 +42,8 @@ function App() {
           <Route path="/unbounce" exact element={<Unbounce />} />
           <Route path="/artstation" exact element={<Artstation />} />
           <Route path="/closeio" exact element={<Closeio />} />
+          <Route path="/sdkc" exact element={<Sdkc />} />
+          <Route path="/toolbar" exact element={<Toolbar />} />
         </Routes>
         <Footer/>
       </>
