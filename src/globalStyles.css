@@ -956,3 +956,39 @@ p.contact_social_text {
   font-size: 14.4px;
   line-height: 1.5;
 }
+
+/* Tour */
+.tour-row-1 {
+  width: 50%;
+}
+.tour-row-2 {
+  margin-left: 30px;
+  width: 50%;
+  margin-top: 80px;
+}
+.tour-images {
+  display: flex;
+}
+p.tour-des {
+ text-align: center;
+  font-size: 16px;
+  color: #515151;
+  margin-top: 15px;
+}
+ul.download-quick-links {
+  padding: 0;
+  margin: 15px auto;
+  list-style: none;
+  max-width: 250px;
+  text-align: left;
+}
+p.clr-blue {
+  color: #0098F7;
+  font-size: 21px;
+  font-weight: bold;
+  line-height: 1.4em;
+  text-align: center;
+}
+h1.tour-space {
+  margin-top: 50px;
+}

@@ -21,6 +21,7 @@ import Closeio from "./components/Pages/Closeio";
 import Sdkc from "./components/Pages/Sdkc";
 import Toolbar from "./components/Pages/Toolbar";
 import Contact from "./components/Pages/Contact";
+import Tour from "./components/Pages/Tour";
 
 
 function App() {
@@ -46,6 +47,7 @@ function App() {
           <Route path="/sdkc" exact element={<Sdkc />} />
           <Route path="/toolbar" exact element={<Toolbar />} />
           <Route path="/contact" exact element={<Contact />} />
+          <Route path="/tour" exact element={<Tour />} />
         </Routes>
         <Footer/>
       </>
