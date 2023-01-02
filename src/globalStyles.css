@@ -936,3 +936,23 @@ pre {
 h3.toolbar-bold {
   margin-top: 10px;
 }
+
+/* Contact */
+.centerlized-img {
+  text-align: center;
+  margin-top: 80px;
+}
+p.contact-text {
+  text-align: center;
+  color: #353535;
+  font-size: 1.566em;
+  font-weight: 300;
+  margin-top: 50px;
+  margin-bottom: 20px;
+}
+p.contact_social_text {
+  text-align: center;
+  color: #7a7a7a;
+  font-size: 14.4px;
+  line-height: 1.5;
+}

@@ -20,6 +20,7 @@ import Artstation from "./components/Pages/Artstation";
 import Closeio from "./components/Pages/Closeio";
 import Sdkc from "./components/Pages/Sdkc";
 import Toolbar from "./components/Pages/Toolbar";
+import Contact from "./components/Pages/Contact";
 
 
 function App() {
@@ -44,6 +45,7 @@ function App() {
           <Route path="/closeio" exact element={<Closeio />} />
           <Route path="/sdkc" exact element={<Sdkc />} />
           <Route path="/toolbar" exact element={<Toolbar />} />
+          <Route path="/contact" exact element={<Contact />} />
         </Routes>
         <Footer/>
       </>
