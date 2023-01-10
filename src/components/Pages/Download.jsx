@@ -8,10 +8,10 @@ function Download() {
                 <h1 className='main-heading'>All-purpose, easy to use WYSIWYG editor with elegance</h1>
                 <p className='main-des'>We make web editing easier, more powerful and more enjoyable with every single click.</p>
                 <div className='button'>
-                    <Link to='/sign-up' className='btn-explore'>
+                    <Link to='/' className='btn-explore'>
                         <a className='btn-inline-ex'>Start Free Trial</a>
                     </Link>
-                    <Link to='/sign-up' className='btn-download'>
+                    <Link to='/download' className='btn-download'>
                         <a className='btn-inline-down'>Check our Pricing</a>
                     </Link>
                 </div>
@@ -142,10 +142,10 @@ function Download() {
                         </div>
                     </div>
                     <div className='button'>
-                        <Link to='/sign-up' className='btn-explore'>
+                        <Link to='/' className='btn-explore'>
                             <a className='btn-inline-ex'>Start Free Trial</a>
                         </Link>
-                        <Link to='/sign-up' className='btn-download'>
+                        <Link to='/' className='btn-download'>
                             <a className='btn-inline-down'>Check our Pricing</a>
                         </Link>
                     </div>
@@ -203,10 +203,10 @@ function Download() {
                         </div>
                     </div>
                     <div className='button'>
-                        <Link to='/sign-up' className='btn-explore'>
+                        <Link to='/' className='btn-explore'>
                             <a className='btn-inline-ex'>Start Free Trial</a>
                         </Link>
-                        <Link to='/sign-up' className='btn-download'>
+                        <Link to='/' className='btn-download'>
                             <a className='btn-inline-down'>Check our Pricing</a>
                         </Link>
                     </div>

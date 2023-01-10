@@ -9,10 +9,10 @@ function Home() {
               <p className='main-des'>Beautiful JavaScript web editor that's easy to integrate for developers<br></br>
               and your users will simply fall in love with its clean design.</p>
               <div className='button'>
-                  <Link to='/sign-up' className='btn-explore'>
+                  <Link to='/explore' className='btn-explore'>
                       <a className='btn-inline-ex'>Explore</a>
                   </Link>
-                  <Link to='/sign-up' className='btn-download'>
+                  <Link to='/download' className='btn-download'>
                       <a className='btn-inline-down'>Dwonload</a>
                   </Link>
               </div>
@@ -31,19 +31,19 @@ function Home() {
                           <img src={require('../images/devs.png')} width="100" height="100" />
                           <p className='edit-title'>Developer friendly</p>
                           <p className='edit-des'>A WYSIWYG HTML editor created by developers, for developers. With a powerful API and documentation you can get started in minutes.</p>
-                          <p className='edit-link'><a href="/wysiwyg-editor/docs/overview/">Quick start<i className='fa fa-angle-right icon-after'></i></a></p>
+                          <p className='edit-link'><a href="/download">Quick start<i className='fa fa-angle-right icon-after'></i></a></p>
                       </div>
                       <div className='img-2'>
                           <img src={require('../images/custom.png')} width="100" height="100" />
                           <p className='edit-title'>Easy to extend</p>
                           <p className='edit-des'>You can literally do anything with the Froala Editor. Well written, structured and documented code is very easy to understand and further extend.</p>
-                          <p className='edit-link'><a href="/wysiwyg-editor/docs/overview/">Custom build<i className='fa fa-angle-right icon-after'></i></a></p>
+                          <p className='edit-link'><a href="/extend">Custom build<i className='fa fa-angle-right icon-after'></i></a></p>
                       </div>
                       <div className='img-3'>
                           <img src={require('../images/plugins.png')} width="100" height="100" />
                           <p className='edit-title'>Out of the box plugins</p>
                           <p className='edit-des'>There's no need to reinvent the wheel. Our rich text editor comes with over 30 out of the box plugins to choose from and use in your project.</p>
-                          <p className='edit-link'><a href="/wysiwyg-editor/docs/overview/">See plugins<i className='fa fa-angle-right icon-after'></i></a></p>
+                          <p className='edit-link'><a href="/plugin">See plugins<i className='fa fa-angle-right icon-after'></i></a></p>
                       </div>
                   </div>
               </div>

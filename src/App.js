@@ -22,6 +22,7 @@ import Sdkc from "./components/Pages/Sdkc";
 import Toolbar from "./components/Pages/Toolbar";
 import Contact from "./components/Pages/Contact";
 import Tour from "./components/Pages/Tour";
+import Pricing from "./components/Pages/Pricing";
 
 
 function App() {
@@ -48,6 +49,8 @@ function App() {
           <Route path="/toolbar" exact element={<Toolbar />} />
           <Route path="/contact" exact element={<Contact />} />
           <Route path="/tour" exact element={<Tour />} />
+          <Route path="/pricing" exact element={<Pricing />} />
+
         </Routes>
         <Footer/>
       </>

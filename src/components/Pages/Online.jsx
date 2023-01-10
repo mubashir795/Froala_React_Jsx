@@ -1,8 +1,11 @@
-import React from 'react';
+import React, {useState} from 'react';
 import { Link } from 'react-router-dom';
 import { FaMagic, FaRegEdit, FaRegImage, FaPuzzlePiece } from 'react-icons/fa';
+import Accordian from"./Accordian";
+import data from "./data";
 
 function Online() {
+    const [questions, setquestions] = useState(data);
     return (
         <>
             <div className='section'>
@@ -74,26 +77,9 @@ function Online() {
                 <h1 className='main-heading'>Frequently Asked Questions</h1>
             </div> 
             <section className='container'>
-                <button className='accordion'>What is an HTML Editor?</button>
-                <div className='panel'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button className='accordion'>Can I use the Froala online HTML Editor for free?</button>
-                <div className='panel'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button className='accordion'>Can I edit and test HTML files online?</button>
-                <div className='panel'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button className='accordion'>What’s the difference between Froala WYSIWYG Editor vs Online HTML Editor?</button>
-                <div className='panel'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
-                <button className='accordion'>Which programming languages and frameworks does Froala Editor support?</button>
-                <div className='panel'>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div> 
+                {questions.map((questions) => {
+                return <Accordian key={questions.id} {...questions} />;
+                })}
             </section>
             <div className='section'>
                 <h1 className='main-heading'>The Next Generation WYSIWYG HTML Editor</h1>

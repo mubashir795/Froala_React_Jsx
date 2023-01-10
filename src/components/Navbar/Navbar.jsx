@@ -27,7 +27,6 @@ function Navbar() {
     
   }, []);
 
-
   return (
     <>
       <IconContext.Provider value={{ color: '#000' }}>
@@ -65,7 +64,7 @@ function Navbar() {
               </li>
               <li className='nav-item'>
                 <Link
-                  to='/'
+                  to='/tour'
                   className='nav-links'
                   onClick={closeMobileMenu}
                 >
@@ -74,16 +73,16 @@ function Navbar() {
               </li>
               <li className='nav-btn'>
                 {button ? (
-                  <Link to='/sign-up' className='btn-link pricing-btn'>Pricing</Link>
+                  <Link to='/pricing' className='btn-link pricing-btn'>Pricing</Link>
                 ) : (
-                  <Link to='/sign-up' className='btn-link pricing-btn'>Pricing</Link>
+                  <Link to='/pricing' className='btn-link pricing-btn'>Pricing</Link>
                 )}
               </li>
               <li className='nav-btn'>
                 {button ? (
-                  <Link to='/sign-up' className='btn-link started-btn'>Get Started</Link>
+                  <Link to='/download' className='btn-link started-btn'>Get Started</Link>
                 ) : (
-                  <Link to='/sign-up' className='btn-link started-btn'>Get Started</Link>
+                  <Link to='/download' className='btn-link started-btn'>Get Started</Link>
                 )}
               </li>
             </ul>
